@@ -72,6 +72,7 @@ main .main {
 .main-page .post-box .post-wrap .content-header {
     height: 33px;
     padding: 0 0 12px 4px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -113,14 +114,10 @@ main .main {
 }
 
 .content-body .body-wrap .content-list .content{
-    /* position: absolute; */
-    overflow: hidden;
-    z-index: -100;
-    
 }
 
 .content-body .body-wrap .content-list .content img{
-    /* overflow: hidden; */
+    width: 100%;
 }
 
 /* 컨텐츠 푸터 */
