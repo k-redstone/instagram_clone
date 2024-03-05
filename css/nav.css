@@ -1,12 +1,14 @@
 .nav {
-  width: 335px;
+  max-width: 330px;
   height: 100vh;
-  box-sizing: border-box;
-  border-right: 1px solid black;
   padding: 7px;
+  border-right: 1px solid black;
+  width: fit-content;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
 }
 .nav-list {
   flex-grow: 1;
@@ -15,20 +17,38 @@
   width: 220px;
   padding: 25px 12px 16px 12px;
   margin-bottom: 19px;
+  box-sizing: border-box;
   cursor: pointer;
-  /* text-align: center; */
+}
+.nav .logo img{
+  width: 78%;
+  height: 100%;
 }
 
 .nav-item {
+  width: 220px;
+  padding: 12px;
+  height: 56px;
+  margin: 4px 0;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 12px;
-  margin: 4px 0;
-  height: 56px;
   box-sizing: border-box;
 }
+.nav-item:hover{
+  background-color: rgb(240, 240, 240);
+  font-weight: 600;
+}
+
+.nav-item:hover span{
+  transform: scale(1.23) translateY(2%);
+  transition-duration: 0.07s;
+}
+
 .nav-item .symbol span {
   font-size: 30px;
+  box-sizing: border-box;
 }
 
 .nav-item .nav-name {
